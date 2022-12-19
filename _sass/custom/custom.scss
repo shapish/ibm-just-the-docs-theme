@@ -1,4 +1,102 @@
-$pink-000: #f77ef1;
-$pink-100: #f967f1;
-$pink-200: #e94ee1;
-$pink-300: #dd2cd4;
+$blue-lt-000: #edf5ff;
+$blue-lt-001: #d0e2ff;
+
+/*
+ * RESETS
+ */
+
+// General
+body {
+  font-weight: 300;
+}
+*:not(.label) {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+// Buttons
+.btn {
+  color: $white;
+  height: 48px;
+  line-height: 48px;
+  padding: 0 16px;
+  padding-right: 40px;
+  font-size: $font-size-5 !important;
+  font-weight: 300;
+}
+.btn-primary:hover {
+  background: $blue-100 !important;
+}
+.btn:hover {
+  color: $white;
+  background: $grey-dk-300;
+}
+
+// Navigation
+.nav-list .nav-list-item {
+  line-height: 1.6;
+}
+.nav-list .nav-list-item a,
+.nav-list .nav-list-item .nav-list-expander {
+  font-size: $font-size-5;
+  color: $body-text-color;
+}
+.nav-list .nav-list-item .nav-list-link:hover {
+  background: rgba(black, 0.03);
+}
+.nav-list .nav-list-item .nav-list-link.active {
+  background: rgba(black, 0.07);
+  color: $body-text-color;
+  border-left: solid 3px $blue-000;
+}
+
+// Code
+code {
+  background: $grey-lt-000;
+  padding: 0 3px;
+  font-size: $font-size-4;
+}
+
+// Code - blocks
+figure.highlight code,
+div.highlighter-rouge code {
+  background: #31343f; // From color theme syntax-one-dark-vivid — see ibm-light.scss
+  padding: 0;
+}
+
+// Notes - Highlights
+p.highlight,
+blockquote.highlight {
+  color: $body-text-color;
+}
+
+// Labels
+.label {
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+}
+
+// Tables
+table {
+  border-spacing: 0;
+  border: solid 1px $border-color;
+}
+code table {
+  border: none;
+}
+th {
+  background: $grey-lt-000;
+}
+th,
+td {
+  border-color: $grey-lt-200;
+}
+
+// Site buttons
+.icon {
+  color: $body-text-color;
+}
+.site-button:hover,
+.site-title:hover {
+  background: rgba(black, 0.03);
+}
