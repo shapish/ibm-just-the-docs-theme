@@ -1,10 +1,3 @@
-# NOTE - Moenen Erbuer: I added some changes to the config file related to the IBM theming
-# of the documentation. I did my changes on the version from Dec 19, if any other edits were
-# done since, make sure to re-apply them in this file bere overwriting. Please delete this
-# paragraph after checking.
-
-# - - -
-
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole site, values
@@ -20,23 +13,35 @@
 # you will see them accessed via {{ site.title }}, {{ site.github_repo }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Discovery Platform
-email: dean.wampler@ibm.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Team documentation
-baseurl: "/Accelerated-Discovery/Discovery-Platform" # the subpath of your site, e.g. /blog
-url: "https://pages.github.ibm.com" # the base hostname & protocol for your site, e.g. http://example.com
+title: Accelerate.Science
+description: Documentation for the Accelerated Discovery Platform
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://accelerate.science" # the base hostname & protocol for your site, e.g. http://example.com
 
 permalink: pretty
-exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json",  "script/", "LICENSE.txt", "lib/", "bin/", "README.md", "Rakefile", "Makefile"
-, "docs/tests/", "notes.md", "vendor"
-]
 
-# Regression tests
-# By default, the pages in /docs/tests are excluded when the site is built.
-# To include them, comment-out the relevant line above.
-# Uncommenting the following line doesn't work - see https://github.com/jekyll/jekyll/issues/4791
-# include: ["docs/tests/"]
+exclude:
+  # from https://github.com/jekyll/jekyll/blob/master/lib/site_template/_config.yml:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  # specific to the theme website:
+  - bin/
+  - lib/
+  - "*.gemspec"
+  - "*.gem"
+  - LICENSE.txt
+  - package.json
+  - package-lock.json
+  - Rakefile
+  - README.md
 
 # Set a path/url to a logo that will be displayed instead of the title
 #logo: "/assets/images/just-the-docs.png"
@@ -47,10 +52,10 @@ search_enabled: true
 search:
   # Split pages into sections that can be searched individually
   # Supports 1 - 6, default: 2
-  heading_level: 6
+  heading_level: 2
   # Maximum amount of previews per search result
   # Default: 3
-  previews: 3
+  previews: 2
   # Maximum amount of words to display before a matched word in the preview
   # Default: 5
   preview_words_before: 3
@@ -68,25 +73,37 @@ search:
   # Supports true or false (default)
   button: false
 
+# To disable support for mermaid diagrams (https://mermaid-js.github.io/mermaid/),
+# comment out the `mermaid` and `version` keys below
+# By default, consuming the theme as a gem leaves mermaid disabled; it is opt-in
+mermaid:
+  # Version of mermaid library
+  # Pick an available version from https://cdn.jsdelivr.net/npm/mermaid/
+  version: "9.1.6"
+  # Put any additional configuration, such as setting the theme, in _includes/mermaid_config.js
+  # See also docs/ui-components/code
+
 # Enable or disable heading anchors
 heading_anchors: true
 
 # Aux links for the upper right navigation
 aux_links:
-  "GitHub":
-    - "https://github.ibm.com/Accelerated-Discovery/Discovery-Platform"
-
-nav_external_links:
-  # - title: Discovery Platform Repo"
-    # url: "https://github.ibm.com/Accelerated-Discovery/Discovery-Platform"
-    # hide_icon: false
+  "Accelerate Science":
+    - "//accelerate.science"
+  "Github":
+    - "//accelerate-science.github.io"
 
 # Makes Aux links open in a new tab. Default is false
-aux_links_new_tab: true
+aux_links_new_tab: false
 
 # Sort order for navigation links
 # nav_sort: case_insensitive # default, equivalent to nil
 nav_sort: case_sensitive # Capital letters sorted before lowercase
+
+# External navigation links
+nav_external_links:
+  # - title: Documentation on Github
+  # url: https://accelerate-science.github.io
 
 # Footer content
 # appears at the bottom of every page's main content
@@ -95,16 +112,16 @@ nav_sort: case_sensitive # Capital letters sorted before lowercase
 back_to_top: true
 back_to_top_text: "Back to top"
 
+# footer_content: 'Copyright &copy; 2017-2020 Patrick Marsceill. Distributed by an <a href="https://github.com/just-the-docs/just-the-docs/tree/main/LICENSE.txt">MIT license.</a> <a href="https://www.netlify.com/">This site is powered by Netlify.</a>'
+
 # Footer last edited timestamp
 last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
 last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
 
-
-
 # Footer "Edit this page on GitHub" link text
 gh_edit_link: true # show or hide edit this page link
 gh_edit_link_text: "Edit this page on GitHub"
-gh_edit_repository: "https://github.ibm.com/Accelerated-Discovery/Discovery-Platform/tree/docs-latest/docs" # the github URL for your repo
+gh_edit_repository: "https://github.com/just-the-docs/just-the-docs" # the github URL for your repo
 gh_edit_branch: "main" # the branch that your docs is served from
 # gh_edit_source: docs # the source that your files originate from
 gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into the editor immediately
@@ -131,15 +148,13 @@ callouts:
 
 # Google Analytics Tracking (optional)
 # e.g, UA-1234567-89
-#ga_tracking: 
-#ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true/nil by default)
+ga_tracking: UA-2709176-10
+ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true/nil by default)
 
 plugins:
   - jekyll-seo-tag
-  #- jemoji
 
 kramdown:
-  highlighter: rouge
   syntax_highlighter_opts:
     block:
       line_numbers: false
@@ -153,8 +168,3 @@ compress_html:
   profile: false
   # ignore:
   #   envs: all
-
-mermaid:
-  # Version of mermaid library
-  # Pick an available version from https://cdn.jsdelivr.net/npm/mermaid/
-  version: "9.1.5"

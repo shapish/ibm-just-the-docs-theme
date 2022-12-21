@@ -1,2 +1,4 @@
-- Complete config.yml with correct footer and github link etc.
+√ - Complete config.yml with correct footer and github link etc.
 - Create dark theme
+- Replace readme files
+- Look into just hoting the jekyll theme

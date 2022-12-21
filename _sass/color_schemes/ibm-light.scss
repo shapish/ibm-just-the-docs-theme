@@ -18,6 +18,10 @@ $font-size-9: 36px;
 $font-size-10: 42px;
 $font-size-10-sm: 48px;
 
+// Grid system
+$nav-list-item-height: $sp-7;
+$nav-list-item-height-sm: $sp-8;
+
 // Base colors
 $grey-dk-000: #a8a8a8;
 $grey-dk-100: #525252;
@@ -28,11 +32,6 @@ $grey-lt-000: #f4f4f4;
 $grey-lt-100: #e5e5e5;
 $grey-lt-200: #e5e5e5;
 $grey-lt-300: #cacaca;
-//
-// $purple-000: #0f62fe;
-// $purple-100: #0353e9;
-// $purple-200: #0353e9;
-// $purple-300: #002d9c;
 //
 $blue-000: #0f62fe;
 $blue-100: #0353e9;
@@ -46,19 +45,21 @@ $border-color: $grey-lt-000;
 $body-text-color: $grey-dk-300;
 $body-heading-color: $grey-dk-300;
 $nav-child-link-color: $grey-dk-200;
-// $search-result-preview-color: $grey-dk-000;
 $link-color: $blue-000;
 $btn-primary-color: $blue-000;
 $base-button-color: $grey-dk-250;
+$search-result-preview-color: $grey-dk-000;
 $search-background-color: $white;
 $table-background-color: $white;
 $border-color: $grey-lt-100;
-// $feedback-color: darken($sidebar-color, 3%);
+$feedback-color: darken($sidebar-color, 3%);
+
+// Custom colors
+$body-text-color-soft: $grey-dk-000;
+$side-nav-hover: rgba(black, 0.03);
+$side-nav-active: rgba(black, 0.07);
+$table-header: $grey-lt-000;
 
 // Code colors
 @import "./vendor/OneDarkJekyll/syntax-one-dark-vivid";
 $code-background-color: #31343f;
-
-// Grid system
-$nav-list-item-height: $sp-7;
-$nav-list-item-height-sm: $sp-8;
