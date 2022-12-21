@@ -1,208 +1,65 @@
-// Moved from _sass/code.scss
+// Typograhy
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@300;500&display=swap");
+$body-font-family: "IBM Plex Sans", system-ui, -apple-system, blinkmacsystemfont,
+  "Segoe UI", roboto, "Helvetica Neue", arial, sans-serif;
+$mono-font-family: "IBM Plex Mono", "SFMono-Regular", menlo, consolas, monospace;
 
-.highlight .c {
-  color: #586e75;
-} // comment //
-.highlight .err {
-  color: #93a1a1;
-} // error //
-.highlight .g {
-  color: #93a1a1;
-} // generic //
-.highlight .k {
-  color: #859900;
-} // keyword //
-.highlight .l {
-  color: #93a1a1;
-} // literal //
-.highlight .n {
-  color: #93a1a1;
-} // name //
-.highlight .o {
-  color: #859900;
-} // operator //
-.highlight .x {
-  color: #cb4b16;
-} // other //
-.highlight .p {
-  color: #93a1a1;
-} // punctuation //
-.highlight .cm {
-  color: #586e75;
-} // comment.multiline //
-.highlight .cp {
-  color: #859900;
-} // comment.preproc //
-.highlight .c1 {
-  color: #586e75;
-} // comment.single //
-.highlight .cs {
-  color: #859900;
-} // comment.special //
-.highlight .gd {
-  color: #2aa198;
-} // generic.deleted //
-.highlight .ge {
-  font-style: italic;
-  color: #93a1a1;
-} // generic.emph //
-.highlight .gr {
-  color: #dc322f;
-} // generic.error //
-.highlight .gh {
-  color: #cb4b16;
-} // generic.heading //
-.highlight .gi {
-  color: #859900;
-} // generic.inserted //
-.highlight .go {
-  color: #93a1a1;
-} // generic.output //
-.highlight .gp {
-  color: #93a1a1;
-} // generic.prompt //
-.highlight .gs {
-  font-weight: bold;
-  color: #93a1a1;
-} // generic.strong //
-.highlight .gu {
-  color: #cb4b16;
-} // generic.subheading //
-.highlight .gt {
-  color: #93a1a1;
-} // generic.traceback //
-.highlight .kc {
-  color: #cb4b16;
-} // keyword.constant //
-.highlight .kd {
-  color: #268bd2;
-} // keyword.declaration //
-.highlight .kn {
-  color: #859900;
-} // keyword.namespace //
-.highlight .kp {
-  color: #859900;
-} // keyword.pseudo //
-.highlight .kr {
-  color: #268bd2;
-} // keyword.reserved //
-.highlight .kt {
-  color: #dc322f;
-} // keyword.type //
-.highlight .ld {
-  color: #93a1a1;
-} // literal.date //
-.highlight .m {
-  color: #2aa198;
-} // literal.number //
-.highlight .s {
-  color: #2aa198;
-} // literal.string //
-.highlight .na {
-  color: #555;
-} // name.attribute //
-.highlight .nb {
-  color: #b58900;
-} // name.builtin //
-.highlight .nc {
-  color: #268bd2;
-} // name.class //
-.highlight .no {
-  color: #cb4b16;
-} // name.constant //
-.highlight .nd {
-  color: #268bd2;
-} // name.decorator //
-.highlight .ni {
-  color: #cb4b16;
-} // name.entity //
-.highlight .ne {
-  color: #cb4b16;
-} // name.exception //
-.highlight .nf {
-  color: #268bd2;
-} // name.function //
-.highlight .nl {
-  color: #555;
-} // name.label //
-.highlight .nn {
-  color: #93a1a1;
-} // name.namespace //
-.highlight .nx {
-  color: #555;
-} // name.other //
-.highlight .py {
-  color: #93a1a1;
-} // name.property //
-.highlight .nt {
-  color: #268bd2;
-} // name.tag //
-.highlight .nv {
-  color: #268bd2;
-} // name.variable //
-.highlight .ow {
-  color: #859900;
-} // operator.word //
-.highlight .w {
-  color: #93a1a1;
-} // text.whitespace //
-.highlight .mf {
-  color: #2aa198;
-} // literal.number.float //
-.highlight .mh {
-  color: #2aa198;
-} // literal.number.hex //
-.highlight .mi {
-  color: #2aa198;
-} // literal.number.integer //
-.highlight .mo {
-  color: #2aa198;
-} // literal.number.oct //
-.highlight .sb {
-  color: #586e75;
-} // literal.string.backtick //
-.highlight .sc {
-  color: #2aa198;
-} // literal.string.char //
-.highlight .sd {
-  color: #93a1a1;
-} // literal.string.doc //
-.highlight .s2 {
-  color: #2aa198;
-} // literal.string.double //
-.highlight .se {
-  color: #cb4b16;
-} // literal.string.escape //
-.highlight .sh {
-  color: #93a1a1;
-} // literal.string.heredoc //
-.highlight .si {
-  color: #2aa198;
-} // literal.string.interpol //
-.highlight .sx {
-  color: #2aa198;
-} // literal.string.other //
-.highlight .sr {
-  color: #dc322f;
-} // literal.string.regex //
-.highlight .s1 {
-  color: #2aa198;
-} // literal.string.single //
-.highlight .ss {
-  color: #2aa198;
-} // literal.string.symbol //
-.highlight .bp {
-  color: #268bd2;
-} // name.builtin.pseudo //
-.highlight .vc {
-  color: #268bd2;
-} // name.variable.class //
-.highlight .vg {
-  color: #268bd2;
-} // name.variable.global //
-.highlight .vi {
-  color: #268bd2;
-} // name.variable.instance //
-.highlight .il {
-  color: #2aa198;
-} // literal.number.integer.long //
+// Font sizes
+$font-size-1: 8px;
+$font-size-1-sm: 9px;
+$font-size-2: 10px; // h4 - uppercased!, h6 not uppercased, text-small
+$font-size-3: 11px; // h5
+$font-size-4: 12px;
+$font-size-5: 14px; // h3
+$font-size-6: 16px; // h2
+$font-size-7: 24px;
+$font-size-8: 32px; // h1
+$font-size-9: 36px;
+$font-size-10: 42px;
+$font-size-10-sm: 48px;
+
+// Grid system
+$nav-list-item-height: $sp-7;
+$nav-list-item-height-sm: $sp-8;
+
+// Base colors
+$grey-dk-000: #a8a8a8;
+$grey-dk-100: #525252;
+$grey-dk-200: #525252;
+$grey-dk-250: #393939;
+$grey-dk-300: #161616;
+$grey-lt-000: #f4f4f4;
+$grey-lt-100: #e5e5e5;
+$grey-lt-200: #e5e5e5;
+$grey-lt-300: #cacaca;
+//
+$blue-000: #0f62fe;
+$blue-100: #0353e9;
+$blue-200: #0353e9;
+$blue-300: #002d9c;
+
+// Element colors
+$body-background-color: $white;
+$sidebar-color: $grey-lt-000;
+$border-color: $grey-lt-000;
+$body-text-color: $grey-dk-300;
+$body-heading-color: $grey-dk-300;
+$nav-child-link-color: $grey-dk-200;
+$link-color: $blue-000;
+$btn-primary-color: $blue-000;
+$base-button-color: $grey-dk-250;
+$search-result-preview-color: $grey-dk-000;
+$search-background-color: $white;
+$table-background-color: $white;
+$border-color: $grey-lt-100;
+$feedback-color: darken($sidebar-color, 3%);
+
+// Custom colors
+$body-text-color-soft: $grey-dk-000;
+$side-nav-hover: rgba(black, 0.03);
+$side-nav-active: rgba(black, 0.07);
+$table-header: $grey-lt-000;
+
+// Code colors
+@import "./vendor/OneDarkJekyll/syntax-one-dark-vivid";
+$code-background-color: #31343f;
