@@ -1,5 +1,6 @@
 // Typograhy
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@300;500&display=swap");
+@import "https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@300;500&display=swap";
+
 $body-font-family: "IBM Plex Sans", system-ui, -apple-system, blinkmacsystemfont,
   "Segoe UI", roboto, "Helvetica Neue", arial, sans-serif;
 $mono-font-family: "IBM Plex Mono", "SFMono-Regular", menlo, consolas, monospace;
@@ -50,6 +51,7 @@ $base-button-color: $grey-dk-300;
 $search-result-preview-color: $grey-lt-000;
 $search-background-color: $grey-dk-200;
 $table-background-color: $grey-dk-100;
+
 // Expand icon hover color in side navigation:
 $feedback-color: darken($sidebar-color, 3%);
 
@@ -62,4 +64,5 @@ $code-inline-bg: $grey-dk-200;
 
 // Code colors
 @import "./vendor/OneDarkJekyll/syntax-one-dark-vivid";
+
 $code-background-color: #31343f;

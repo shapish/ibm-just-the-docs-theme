@@ -1,5 +1,6 @@
 // Typograhy
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@300;500&display=swap");
+@import "https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@300;500&display=swap";
+
 $body-font-family: "IBM Plex Sans", system-ui, -apple-system, blinkmacsystemfont,
   "Segoe UI", roboto, "Helvetica Neue", arial, sans-serif;
 $mono-font-family: "IBM Plex Mono", "SFMono-Regular", menlo, consolas, monospace;
@@ -32,7 +33,6 @@ $grey-lt-000: #f4f4f4;
 $grey-lt-100: #e5e5e5;
 $grey-lt-200: #e5e5e5;
 $grey-lt-300: #cacaca;
-//
 $blue-000: #0f62fe;
 $blue-100: #0353e9;
 $blue-200: #0353e9;
@@ -62,4 +62,5 @@ $table-header: $grey-lt-000;
 
 // Code colors
 @import "./vendor/OneDarkJekyll/syntax-one-dark-vivid";
+
 $code-background-color: #31343f;
